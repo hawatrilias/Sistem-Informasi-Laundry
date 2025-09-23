@@ -79,6 +79,7 @@ if (isset($_GET['edit'])) {
 <head>
     <title>Sistem Laundry</title>
     <style>
+        body{margin: 0; padding: 0; font-family: cambria;}
         .container{display: grid; grid-template-columns: 3fr 1fr; gap: 15px;}
         .form-group{padding: 5px;}
         form{padding: 0; margin: 0;}
@@ -87,6 +88,9 @@ if (isset($_GET['edit'])) {
         .edit{color: #fff; border-style: none; padding: 5px 15px;}
         .edit{background-color: gray; padding: 5px 15px; border-radius: 5px;}
         a .edit{text-decoration: none;} 
+        table{border-color: lightgray;}
+        th{background-color: green; color: #fff;}
+        
     </style>
 
 </head>
@@ -94,7 +98,7 @@ if (isset($_GET['edit'])) {
     <h1 align="center">Sistem Informasi Laundry</h1>
     <div class="container">
         <section>
-            <table border="1" cellpadding="5" cellspacing="0" width="80%" align="center">
+            <table border="1" cellpadding="8" cellspacing="0" width="80%" align="center">
                 <tr>
                     <th>ID</th>
                     <th>Nama Pelanggan</th>
